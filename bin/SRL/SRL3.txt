@@ -1,0 +1,20 @@
+LUI $t0 0XFFFF
+SRL $t0 $t0 0X10
+
+LUI $t1 0XFFFF
+ADDU $t0 $t1 $t0
+
+SRL $v0 $t0 0x1f
+
+JR $ra
+
+just fill a reg with all 1s and then shift them all out except 1 and output 1
+
+3C08FFFF
+00084402
+3C09FFFF
+01284021
+000817C2
+03E00008
+
+3C08FFFF000844023C09FFFF01284021000817C203E00008

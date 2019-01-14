@@ -1,0 +1,19 @@
+LUI $t1 0X0010
+SRL $t1 $t1 0X10
+
+LUI $t0 0XFFFF
+SRLV $t0 $t0 $t1
+
+LUI $t1 0XFFFF
+ADDU $t0 $t1 $t0
+
+LUI $t1 0X001f
+SRL $t1 $t1 0X10
+
+SRLV $v0 $t0 $t1
+
+JR $ra
+
+just fill a reg with all 1s and then shift them all out except 1 and output 1 (COPY OF SRL3 EDITED SLIGHTLY)
+
+3C09001000094C023C08FFFF012840063C09FFFF012840213C09001F00094C020128100603E00008

@@ -1,0 +1,11 @@
+LUI $v0 0X0001
+JR $ra
+
+LOAD 1 INTO UPPER 16 and output should output 0 just checking no errors
+
+3C020001
+03E00008
+
+3C02000103E00008
+
+Y

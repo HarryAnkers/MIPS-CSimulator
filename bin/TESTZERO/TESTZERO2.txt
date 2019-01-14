@@ -1,0 +1,17 @@
+LUI $t0 0X0003
+SRL $t0 $t0 0X10
+
+SUBU $zero $zero $t0
+
+SUBU $v0 $zero $t4
+
+JR $ra
+
+out 0
+
+3C080003
+00084402
+00080023
+000C1023
+03E00008
+

@@ -1,0 +1,11 @@
+ADDI $zero $zero 0xFFFF
+
+ADDU $v0 $zero $t4
+
+JR $ra
+
+out 0
+
+2000FFFF
+000C1021
+03E00008

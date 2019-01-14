@@ -1,0 +1,19 @@
+LUI $t0 0X8000
+
+LUI $t1 0X0001
+SRL $t1 $t1 0X10
+
+SUB $v0 $t0 $t1
+
+JR $ra
+
+lowest neg number sub 1 should make overflow
+error -10 or 246 unsigned
+
+3C088000
+3C090001
+00094C02
+01091022
+03E00008
+
+3C0880003C09000100094C020109102203E00008

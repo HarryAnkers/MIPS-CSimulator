@@ -1,0 +1,16 @@
+LUI $t0 0X0003
+SRL $t0 $t0 0X10
+
+JALR $t1 $t0
+JR $ra
+
+should produce unaligned error of -11 or in unsigned 245
+
+3C080003
+00084402
+01004809
+03E00008
+
+3C080003000844020100480903E00008
+
+Y

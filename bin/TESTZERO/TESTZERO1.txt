@@ -1,0 +1,16 @@
+LUI $t0 0X0003
+SRL $t0 $t0 0X10
+
+ADD $zero $zero $t0
+
+ADD $v0 $zero $t4
+
+JR $ra
+
+out 0
+
+3C080003
+00084402
+00080020
+000C1020
+03E00008

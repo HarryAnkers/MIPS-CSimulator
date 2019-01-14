@@ -1,0 +1,20 @@
+LUI $t0 0X0FFF
+LUI $t1 0XFFFF
+SRL $t1 $t1 0X10
+ADDU $t0 $t0 $t1
+
+JR $t0
+JR $ra
+
+should be 1 before first pc and produce an error of -11 or in unsigned 245
+
+3C080FFF
+3C09FFFF
+00094C02
+01094021
+01000008
+03E00008
+
+3C080FFF3C09FFFF00094C02010940210100000803E00008
+
+Y

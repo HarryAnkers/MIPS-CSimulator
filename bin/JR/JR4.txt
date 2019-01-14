@@ -1,0 +1,14 @@
+LUI $t0 0X1100
+
+JR $t0
+JR $ra
+
+should be 1 after last pc and produce an error of -11 or in unsigned 245
+
+3C081100
+01000008
+03E00008
+
+3C0811000100000803E00008
+
+Y
