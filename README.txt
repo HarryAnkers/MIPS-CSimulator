@@ -1,7 +1,7 @@
 MIPS-C Simulator
 ================
 This was a pair coursework I worked on in 2nd year for a computer
-architecture class. Below is the full spec
+architecture class. Below is the full spec for the project.
 
 Architecture II Coursework
 ==========================
